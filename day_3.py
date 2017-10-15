@@ -60,7 +60,6 @@ def image_getter(enquired_item):
                         f = open(os.path.join(direc, item + "_" + str(cntr) + ".jpg"), 'wb')
                     else:
                         f = open(os.path.join(direc, item + "_" + str(cntr) + "." + Type), 'wb')
-
                     f.write(raw_img)
                     f.close()
                 except Exception as e:
