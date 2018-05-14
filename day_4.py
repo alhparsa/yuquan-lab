@@ -100,7 +100,7 @@ def load_more(driver):  # simulates the user's behaviour to load more pictures
         time.sleep(2)
     try:
         time.sleep(5)
-        driver.find_element_by_id("smb").click()
+        load_mr = driver.find_element_by_id("smb")
     except Exception as e:
         print "couldn't load more pictures" + e
     for _ in range(10):
